@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Lab_5_3
@@ -31,7 +32,8 @@ namespace Lab_5_3
 
         public override string ToString()
         {
-            return $"{make} {model} {year} {price}";
+            
+            return $"{make,-15} {model,-15} {year} {price.ToString("C", CultureInfo.CurrentCulture)}";
         }
     }
 }

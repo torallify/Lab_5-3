@@ -78,38 +78,5 @@ namespace Lab_5_3
             Console.WriteLine($"{quitI}. Quit\n");
             
         }
-        public void PrintCars()
-        {
-            int count = 1;
-
-            Console.WriteLine();
-            foreach (var car in cars)
-            {
-                Console.WriteLine($"{count}. {car}");
-                count++;
-            }
-            
-            Console.WriteLine($"{count}. Add a car");
-
-            count++;
-            Console.WriteLine($"{count}. Quit\n");
-
-        }
-
-
-
-
-
-
-
-
-        /*
-         *  robotList.Add(new WallE("Wall-E!!!"));
-            robotList.Add(new WallE("Wall-F"));
-            robotList.Add(new WallE("Wall-G"));
-            robotList.Add(new Eve("Eve"));
-            robotList.Add(new Eve("Ev-a!!!")); 
-         */
-
     }
 }
