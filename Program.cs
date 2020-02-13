@@ -18,7 +18,7 @@ namespace Lab_5_3
                 userSelection = GetInt("Which car would you like? ");
 
 
-                if (userSelection < addCarIndex)
+                if (userSelection < addCarIndex && userSelection > 0)
                 {
                     Console.Write("\nWould you like to buy this car? ");
                     string userBuying = Console.ReadLine().ToLower();
@@ -61,9 +61,8 @@ namespace Lab_5_3
 
                 worked = int.TryParse(input, out number);
             }
-
             return number;
-
         }
+
     }
 }
