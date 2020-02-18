@@ -23,7 +23,7 @@ namespace Lab_5_3
                     Console.Write("\nWould you like to buy this car? ");
                     string userBuying = Console.ReadLine().ToLower();
 
-                    if (userBuying == "y")
+                    if (userBuying == "y" || userBuying == "yes")
                     {
                         test.RemoveCar(userSelection);
 

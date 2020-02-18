@@ -41,7 +41,7 @@ namespace Lab_5_3
             Console.Write("Is this a used car?");
             string usedCar = Console.ReadLine().ToLower();
             
-            if (usedCar == "yes")
+            if (usedCar == "yes" || usedCar == "y")
             {
                 Console.Write("What's the mileage? ");
                 double carMileage = Double.Parse(Console.ReadLine());
